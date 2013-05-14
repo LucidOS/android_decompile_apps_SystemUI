@@ -2,7 +2,7 @@
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/notification_header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" android:baselineAligned="false">
         <com.android.systemui.statusbar.policy.Clock android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Clock.Pantech" android:id="@id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" />
         <com.android.systemui.statusbar.policy.DateView android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Date" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
         <com.android.systemui.statusbar.RotationToggle android:id="@id/rotation_lock_button" android:clickable="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="8.0dip" android:button="@drawable/ic_notify_rotation" android:contentDescription="@string/accessibility_rotation_lock_off" />
