@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/easy_setting_title_bg" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/notifications_title" android:paddingLeft="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/status_bar_notification_title" android:singleLine="true" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/clear_all_button" android:background="@drawable/btn_status_bar" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="102.0dip" android:layout_height="30.0dip" android:text="@string/status_bar_clear_all_button" android:layout_alignParentRight="true" android:contentDescription="@string/accessibility_clear_all" style="?android:attr/buttonStyle" />
+</RelativeLayout>

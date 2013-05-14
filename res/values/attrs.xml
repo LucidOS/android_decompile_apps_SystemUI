@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="keyCode" format="integer" />
+    <attr name="keyRepeat" format="boolean" />
+    <attr name="glowBackground" format="reference" />
+    <attr name="text" format="string" />
+    <attr name="insetLeft" format="dimension" />
+    <attr name="rowHeight" format="dimension" />
+    <attr name="recentItemLayout" format="reference" />
+    <attr name="onMark" format="reference" />
+    <attr name="extraMark" format="reference" />
+    <attr name="offMark" format="reference" />
+    <attr name="onOffProgressEnabled" format="boolean" />
+    <attr name="onOffProgressBarDrawable" format="reference" />
+    <attr name="onAnimation" format="reference" />
+    <attr name="offAnimation" format="reference" />
+    <attr name="onOffTitle" format="string" />
+    <attr name="onOffState" format="boolean" />
+</resources>

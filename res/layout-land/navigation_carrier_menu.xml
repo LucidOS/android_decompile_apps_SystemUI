@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="#d8000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <LinearLayout android:gravity="center" android:id="@id/linear_googlenow" android:layout_width="147.0dip" android:layout_height="93.0dip">
+        <FrameLayout android:layout_gravity="center" android:id="@id/recents_icon_googlenow" android:background="@drawable/recents_icon_googlenow" android:layout_width="132.0dip" android:layout_height="40.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/recents_icon_googlenow_text" android:background="@drawable/google_btn_textimage" android:layout_width="53.0dip" android:layout_height="25.0dip" />
+                <ImageView android:layout_width="2.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff4b4a4a" android:layout_gravity="center_vertical" android:id="@id/recents_icon_googlenow_search_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google_search" android:singleLine="true" android:translationX="-2.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_navi_carrier" android:layout_width="0.0dip" android:layout_height="93.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_navi_lgu" android:paddingLeft="25.0dip" android:paddingTop="5.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_lgu_hdtv" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_lgu_hdtv" android:singleLine="true" android:drawableTop="@drawable/recents_icon_lgu_hdtv" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_lgu_box" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_lgu_box" android:singleLine="true" android:drawableTop="@drawable/recents_icon_lgu_box" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_navi_kt" android:paddingLeft="25.0dip" android:paddingTop="5.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_kt_genie" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_kt_genie" android:singleLine="true" android:drawableTop="@drawable/recents_icon_kt_genie" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_kt_olleh_tv" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_kt_alleh_tv" android:drawableTop="@drawable/recents_icon_kt_alleh_tv" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_kt_olleh_navi" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_kt_alleh_navi" android:drawableTop="@drawable/recents_icon_kt_alleh_navi" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_kt_olleh_market" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_kt_alleh_market" android:drawableTop="@drawable/recents_icon_kt_alleh_market" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

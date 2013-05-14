@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.RecentsPanelView android:id="@id/recents_root" android:tag="SKY_RECENT" android:layout_width="fill_parent" android:layout_height="fill_parent" systemui:recentItemLayout="@layout/status_bar_recent_item"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <View android:id="@id/recents_transition_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/recents_bg_protect" android:background="@drawable/status_bar_recents_background" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/recents_transition_placeholder_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.android.systemui.recent.RecentsHorizontalScrollView android:layout_gravity="bottom|right|center" android:orientation="horizontal" android:id="@id/recents_container" android:scrollbars="none" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/status_bar_recents_scroll_fading_edge_length" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/status_bar_recents_right_glow_margin" android:stackFromBottom="true" android:divider="@null">
+                <LinearLayout android:orientation="horizontal" android:id="@id/recents_linear_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </com.android.systemui.recent.RecentsHorizontalScrollView>
+            <View android:layout_gravity="top|right|center" android:id="@id/menu_location" android:layout_width="0.0px" android:layout_height="0.0px" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/recents_bg_shortcut" android:background="#d8000000" android:layout_width="fill_parent" android:layout_height="93.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_shortcut" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="#ff98999a" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="3.0dip" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_shortcut_sky" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="15.0dip" android:typeface="sans" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_mini_window" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@*android:string/aot_mini_window" android:singleLine="true" android:drawableTop="@drawable/recents_icon_aot" />
+                        <View android:layout_width="120.0dip" android:layout_height="fill_parent" />
+                        <TextView android:textSize="15.0dip" android:typeface="sans" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_smart_voice" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@*android:string/aot_smart_voice" android:singleLine="true" android:drawableTop="@*android:drawable/aot_icon_smart_voice" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <include android:id="@id/recents_no_apps" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/status_bar_no_recent_apps" />
+    <include android:id="@id/recents_tutorial" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/status_bar_recent_tutorial" />
+</com.android.systemui.recent.RecentsPanelView>

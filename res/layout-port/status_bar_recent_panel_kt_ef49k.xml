@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.RecentsPanelView android:id="@id/recents_root" android:layout_width="fill_parent" android:layout_height="fill_parent" systemui:recentItemLayout="@layout/status_bar_recent_item"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <View android:id="@id/recents_transition_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/recents_bg_protect" android:background="@drawable/status_bar_recents_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/recents_transition_placeholder_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.android.systemui.recent.RecentsVerticalScrollView android:layout_gravity="bottom|left|center" android:id="@id/recents_container" android:scrollbars="none" android:fadingEdge="vertical" android:fadingEdgeLength="@dimen/status_bar_recents_scroll_fading_edge_length" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:stackFromBottom="true" android:divider="@null">
+                <LinearLayout android:orientation="vertical" android:id="@id/recents_linear_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.android.systemui.recent.RecentsVerticalScrollView>
+        </FrameLayout>
+        <FrameLayout android:id="@id/recents_bg_shortcut" android:background="#d8000000" android:layout_width="fill_parent" android:layout_height="136.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/google_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_shortcut" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/recent_apps_of_gap" android:layout_width="fill_parent" android:layout_height="92.0dip">
+                        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_shortcut_kt" android:paddingLeft="25.0dip" android:paddingTop="1.0dip" android:paddingRight="25.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_kt_genie" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_kt_genie" android:singleLine="true" android:drawableTop="@drawable/recents_icon_kt_genie" android:layout_weight="1.0" />
+                                <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_kt_alleh_tv" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_kt_alleh_tv" android:singleLine="true" android:drawableTop="@drawable/recents_icon_kt_alleh_tv" android:layout_weight="1.0" />
+                                <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_kt_alleh_navi" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_kt_alleh_navi" android:singleLine="true" android:drawableTop="@drawable/recents_icon_kt_alleh_navi" android:layout_weight="1.0" />
+                                <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recents_icon_kt_alleh_market" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="@string/title_kt_alleh_market" android:singleLine="true" android:drawableTop="@drawable/recents_icon_kt_alleh_market" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/recents_bg_googlenow" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                        <FrameLayout android:layout_gravity="center" android:id="@id/recents_icon_googlenow" android:background="@drawable/recents_icon_googlenow" android:layout_width="311.0dip" android:layout_height="40.0dip">
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:id="@id/recents_icon_googlenow_text" android:background="@drawable/google_btn_textimage" android:layout_width="53.0dip" android:layout_height="25.0dip" />
+                                <ImageView android:layout_width="2.0dip" android:layout_height="fill_parent" />
+                                <TextView android:textSize="12.0dip" android:textColor="#ff4b4a4a" android:layout_gravity="center_vertical" android:id="@id/recents_icon_googlenow_search_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google_search" android:singleLine="true" android:translationX="-2.0dip" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_gravity="bottom|left|center" android:id="@id/menu_location" android:layout_width="0.0px" android:layout_height="0.0px" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:id="@id/recents_no_apps" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/status_bar_no_recent_apps" />
+    <include android:id="@id/recents_tutorial" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/status_bar_recent_tutorial" />
+</com.android.systemui.recent.RecentsPanelView>

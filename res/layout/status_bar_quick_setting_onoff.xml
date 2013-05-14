@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foregroundGravity="center">
+        <ImageView android:layout_gravity="center" android:id="@id/off_status_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center" android:id="@id/on_status_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/onoff_progress" android:background="@drawable/easy_setting_loading_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/easy_setting_progress" style="?android:attr/progressBarStyle" />
+        <ImageView android:layout_gravity="center" android:id="@id/dim_status_btn" android:background="@drawable/easy_setting_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ffbebebe" android:gravity="center_horizontal" android:id="@id/onoff_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

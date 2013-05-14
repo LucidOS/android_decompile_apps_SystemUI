@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/recent_option_deleteall" android:title="@string/recent_deleteall" />
+    <item android:id="@id/recent_option_taskmanager" android:title="@string/recent_taskmanager" />
+    <item android:id="@id/recent_option_tips" android:title="@string/recent_tips" />
+</menu>
