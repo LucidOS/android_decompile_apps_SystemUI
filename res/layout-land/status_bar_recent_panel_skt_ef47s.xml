@@ -10,7 +10,7 @@
                 <LinearLayout android:orientation="horizontal" android:id="@id/recents_linear_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
             </com.android.systemui.recent.RecentsHorizontalScrollView>
         </FrameLayout>
-        <FrameLayout android:id="@id/recents_bg_shortcut" android:background="#d8000000" android:layout_width="fill_parent" android:layout_height="93.0dip" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/recents_bg_shortcut" android:background="#d8000000" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true">
             <LinearLayout android:gravity="left" android:orientation="vertical" android:background="@drawable/google_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
                 <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_shortcut" android:layout_width="fill_parent" android:layout_height="fill_parent">
                     <LinearLayout android:gravity="center" android:id="@id/recents_bg_googlenow" android:layout_width="fill_parent" android:layout_height="81.0dip">
